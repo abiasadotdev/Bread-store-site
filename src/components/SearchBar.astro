@@ -1,8 +1,24 @@
 ---
-const {Class} = Astro.props;
+import ProductCard from './ProductCard.astro';
+
+const {Class, datas} = Astro.props;
 ---
 
 <div class=`bg-white border-4 border-slate-200 h-14 w-64 rounded-full shadow-lg flex justify-start items-center px-4 ${Class}`>
     <i class="bi bi-fork-knife text-lg font-bold text-black opacity-80 mr-3"></i>
     <input type="search" id="searchInput" name="search" placeholder="Mau roti apa hari ini?" class="h-full w-full text-base font-normal text-black focus:outline-none" />
 </div>
+
+<script type="module">
+    const searchInput = document.getElementById('searchInput');
+
+    const breads = document.getElementById('breads');
+
+    searchInput?.onchange = () => {
+        const findedData = datas.find(data => data.name.toLowerCase() == searchInput.toLowerCase());
+
+        breads.innerHTML = findedData.map(data => (
+            <ProductCard image='/bread.webp' name={data.name} variant={data.variant} description={data.description} stock={data.stock} price={data.price} />
+        ));
+    };
+</script>

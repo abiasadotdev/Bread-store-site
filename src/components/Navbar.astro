@@ -7,8 +7,17 @@ import HamburgerIcon from './HamburgerIcon.astro'
         <a href="" class="text-2xl font-bold text-white">Tokoroti</a>
     </div>
     <div class="flex justify-end items-center">
-        <button class="">
+        <button id="hamburgerButton" class="">
             <HamburgerIcon />
         </button>
     </div>
 </nav>
+
+
+<script>
+    const hamburgerButton = document.getElementById('hamburgerButton');
+
+    hamburgerButton?.addEventListener('click', () => {
+        hamburgerButton.classList.toggle('active');
+    });
+</script>

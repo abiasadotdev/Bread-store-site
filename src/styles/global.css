@@ -9,3 +9,13 @@ body {
 body {
   background-color: white;
 }
+
+.active > span:nth-child(2) {
+  width: 24px;
+  transition-duration: 200ms;
+}
+
+.active > span:nth-child(3) {
+  width: 24px;
+  transition-duration: 200ms;
+}
