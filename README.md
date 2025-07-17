@@ -14,6 +14,10 @@ Im build simple bread store website with Astro and Baserow.
 | dev    | Run dev server           |
 | build  | Build production project |
 
+### Preview Link
+
+> [Preview](https://breadweb.netlify.app)
+
 Author: Abhiassa
 
 © 2025 Abhiassa. All Rights reserved.
