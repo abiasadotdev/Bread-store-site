@@ -24,6 +24,12 @@ h1 {
   animation-name: in;
   animation-duration: 1500ms;
   animation-fill-mode: both;
+}
+
+.description {
+  animation-name: in;
+  animation-duration: 1500ms;
+  animation-fill-mode: both;
   animation-delay: 1000ms;
 }
 

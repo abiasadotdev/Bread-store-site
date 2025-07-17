@@ -9,9 +9,9 @@ import NavbarMenu from './NavbarMenu.astro'
         <a href="" class="text-2xl font-bold text-white">Tokoroti</a>
     </div>
         <ul class="hidden gap-10 md:flex">
-            <li><a href="" class="text-base font-medium text-white">Home</a></li>
-            <li><a href="" class="text-base font-medium text-white">Breads</a></li>
-            <li><a href="" class="text-base font-medium text-white">Contacts</a></li>
+            <li><a href="#" class="text-base font-medium text-white">Home</a></li>
+            <li><a href="#main" class="text-base font-medium text-white">Breads</a></li>
+            <li><a href="#footer" class="text-base font-medium text-white">Contacts</a></li>
         </ul>
     <div class="flex justify-end items-center md:hidden">
         <button id="hamburgerButton" class="">
@@ -20,7 +20,7 @@ import NavbarMenu from './NavbarMenu.astro'
     </div>
 </nav>
 
-<div id="navbarMenu" class="absolute right-8 hidden bg-white h-44 w-44 rounded-xl p-5">
+<div id="navbarMenu" class="absolute z-2 right-8 hidden bg-white h-44 w-44 rounded-xl p-5">
     <NavbarMenu />
 </div>
 
